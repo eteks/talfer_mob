@@ -31,7 +31,7 @@ a,a:hover,a:active,a:focus
 }
 .navbar
 {
-    padding: 15px 0;
+    padding-bottom: 5px;
     background: #fff;
     border: 0;
     border-bottom:1px solid #1899d3;
@@ -59,7 +59,7 @@ a,a:hover,a:active,a:focus
 #sidebar {
     width: 250px;
     position: fixed;
-    top: 0;
+    top: 5px;
     left: -250px;
     height: 100vh;
     z-index: 999;
@@ -415,4 +415,21 @@ form p
 .reglab2
 {
     width: 30%;
+}
+/* ---------------------------------------------------
+ Side bar
+----------------------------------------------------- */
+.header_logo img
+{
+    float: left;
+    width: 120px;
+}
+#sidebarCollapse .glyphicon
+{
+    top:35px;
+}
+.selected
+{
+    color: #fff;
+    background: #1899d2;
 }
