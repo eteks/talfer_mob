@@ -99,6 +99,14 @@
                     $('.collapse.in').toggleClass('in');
                     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
                 });
+<<<<<<< HEAD
+                 $('#navlist li a').click(function(e) {
+                    e.preventDefault(); //prevent the link from being followed
+                    $('#navlist li a').removeClass('selected');
+                    $(this).addClass('selected');
+                });
+=======
+>>>>>>> 42aec5cdf1e33bbb0f377c870350d560e73ee688
             });
         </script>
     </body>

@@ -1,4 +1,5 @@
 /*FONTS*/
+@import "https://fonts.googleapis.com/css?family=Titillium Web";
 @font-face 
 {
     font-family: titilliumweb_regular;
@@ -235,7 +236,7 @@ body
 .login_button
 {
   width:60%;
-  font-family: titilliumweb_semibold; 
+  font-family: 'Titillium Web','SemiBold'; 
   background-color: #1999d2;
   height: 30px;
   font-size: 18px;
@@ -248,6 +249,14 @@ body
     bottom: 8%;
     width: 100%;
     text-align: center;
+}
+.reghome_form a, .bottom_text p a, .log_reg_form label
+{
+    font-family: 'Titillium Web','SemiBold';
+}
+.forgot_pwd_text a, .log_reg_form .container
+{
+    font-family: 'Titillium Web';
 }
 form p
 {
@@ -292,8 +301,9 @@ form p
 }
 .log_reg_form label
 {
-    color: rgba(255,255,255,0.7);
+    color: #fff;
     margin:0;
+    font-weight: 500;
 }
 .forgot_pwd_text
 {
@@ -387,7 +397,7 @@ form p
 .register_button_inner
 {
     width: 100%;
-    font-family: titilliumweb_regular;
+    font-family: 'Titillium Web','Regular';
     background-color: #fff;
     height: 30px;
     font-size: 18px;
@@ -410,12 +420,16 @@ form p
  }
  .regpg_2
  {
-    max-width:  70% !important;
+    max-width:  75% !important;
     margin-bottom: 10px !important;
  }
 .reglab2
 {
-    width: 30%;
+    width: 25%;
+}
+.pass_mar
+{
+    margin-bottom: 0 !important;
 }
 /* ---------------------------------------------------
  Side bar
@@ -428,6 +442,10 @@ form p
 #sidebarCollapse .glyphicon
 {
     top:35px;
+}
+.menu_icon
+{
+    margin: 0px 15px;
 }
 /* ---------------------------------------------------
  Content style
