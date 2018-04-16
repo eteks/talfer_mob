@@ -38,6 +38,7 @@ a,a:hover,a:active,a:focus
     border-bottom:1px solid #1899d3;
     border-radius: 0;
     text-align: right;
+    margin-bottom: 8px;
 }
 
 .navbar-btn 
@@ -446,8 +447,55 @@ form p
 {
     margin: 0px 15px;
 }
-.selected
+/* ---------------------------------------------------
+ Content style
+----------------------------------------------------- */
+.menu_bar
 {
-    color: #fff;
-    background: #1899d2;
+    float: right;
+    padding-left: 0 !important;
+}
+.menu_bar li
+{
+    list-style-type: none;
+    float: left;
+    padding: 0 7px;
+}
+.menu_bar li > a
+{
+  text-decoration: none;
+  color:#656669;
+  font-family: titilliumweb_bold;
+}
+.menu_bar .top
+{
+    padding-top: 9px;
+}
+.menu_right_border
+{
+  border-right: 1px solid  #d9dcd7;
+  padding: 5px 10px;
+}
+.vitalis p, .notification_topic p
+{
+  background-color: #36a795;
+  color:#fff;
+  width: 100%;
+  padding:5px 10px;
+}
+.clear_both
+{
+clear:both;
+}
+.vitalis_desc img
+{
+    max-width: 100%;
+}
+.back a
+{
+    color:#2e9fbd !important;
+}
+.back
+{
+    margin-top: 12%;
 }

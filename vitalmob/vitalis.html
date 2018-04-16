@@ -20,29 +20,35 @@
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+
+                <ul class="list-unstyled components" id="navlist"> 
+                    <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><span class="menu_icon"><img width="15px" height="15px" src="img/help.png"></span>HELP</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">Home 1</a></li>
+                            <!-- <li><a href="#">Home 1</a></li>
                             <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
+                            <li><a href="#">Home 3</a></li> -->
                         </ul>
                     </li>
                     <li>
-                        <a href="#">About</a>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                        <a href="#"><span class="menu_icon"><img width="15px" height="15px" src="img/profile.png"></span>PROFILE</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><span class="menu_icon"><img width="15px" height="15px" src="img/account.png"></span>ACCOUNT</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Page 1</a></li>
+                           <!--  <li><a href="#">Page 1</a></li>
                             <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
+                            <li><a href="#">Page 3</a></li> -->
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a href="#languageSubmenu" data-toggle="collapse" aria-expanded="false"><span class="menu_icon"><img width="15px" height="15px" src="img/language.png"></span>LANGUAGES</a>
+                          <ul class="collapse list-unstyled" id="languageSubmenu">
+                            <li><a href="#">ENGLISH</a></li>
+                            <li><a href="#">ESPANOL</a></li>
+                            <li><a href="#">CATALA</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#"><span class="menu_icon"><img width="15px" height="15px" src="img/signout.png"></span>SIGN OUT</a>
                     </li>
                 </ul>
             </nav>
@@ -50,8 +56,13 @@
             <!-- Page Content Holder -->
             <div id="content">
 
+                
                 <nav class="navbar navbar-default">
                         <div class="navbar-header">
+                            <div class="header_logo">
+                                <img src="img/title_logo.png">  
+                            </div>
+
                             <a href="#" id="sidebarCollapse">
                               <span class="glyphicon glyphicon-align-justify"></span>
                             </a>
@@ -65,6 +76,27 @@
                             </ul>
                         </div>
                 </nav>
+                <ul class="menu_bar">
+                            <li class="menu_right_border top"><a href="#">Orial Gifra</a></li>
+                            <li><a href="#"><img src="img/user_icon.png"></a></li>
+                            <li class="top"><a href="#">4.367</a></li>
+                </ul>   
+                <div class="clear_both"></div>
+                <div class="vitalis text-left"> 
+                    <p>WHAT IS VITALIS</p>
+                </div> 
+                <div class="vitalis_desc">
+                    <p>Vitalis is a rewarding system based on your moves.</p>
+                    <p>The more dynamic you are, more healthy you become and more Vitalis you earn.</p>
+                    <p>Vitalis is associated to Corporate Welness Programs, so if you are no seeing  here the rewarding details is bacause your account is not associated to any Corporate VitalSfera Wellness account.</p>
+                    <img src="img/con_img.png">
+                    <p>Check out with your company for more information or drop us a line here: 
+                    <strong>corporate@vitalsfera.com</strong></p>
+
+                    <p class="back"><a href="">< Back</a></p>
+
+                </div>
+
 
                
             </div>
@@ -99,14 +131,11 @@
                     $('.collapse.in').toggleClass('in');
                     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
                 });
-<<<<<<< HEAD
-                 $('#navlist li a').click(function(e) {
+                $('#navlist a').click(function(e) {
                     e.preventDefault(); //prevent the link from being followed
-                    $('#navlist li a').removeClass('selected');
+                    $('#navlist a').removeClass('selected');
                     $(this).addClass('selected');
                 });
-=======
->>>>>>> 42aec5cdf1e33bbb0f377c870350d560e73ee688
             });
         </script>
     </body>
