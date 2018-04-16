@@ -324,6 +324,7 @@ form p
     position: absolute;
     opacity: 0;
     cursor: pointer;
+    display: none;
 }
 
 /* Create a custom checkbox */
