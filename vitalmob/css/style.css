@@ -277,3 +277,141 @@ form p
     top: 0;
     right: 0;
 }
+/* ---------------------------------------------------
+    REGISTER_PAGE , LOGIN STYLE
+----------------------------------------------------- */
+.log_reg_form
+{
+    position: absolute;
+    bottom: unset;
+    width: 100%;
+    text-align: left;
+    top: 20%;
+    padding: 0px 8%;
+}
+.log_reg_form label
+{
+    color: rgba(255,255,255,0.7);
+    margin:0;
+}
+.forgot_pwd_text
+{
+    float: right;
+    margin:0;
+}
+.log_reg_form  a
+{
+    color: rgba(255,255,255,0.7);
+}
+.log_reg_form input
+{
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    border-top: 1px solid rgba(30,155,215,0);
+    border-right:1px solid rgba(30,155,215,0);
+    border-left: 1px solid rgba(30,155,215,0);
+    background-color:rgba(30,155,215,0);
+    border-radius: 0;
+    line-height: 0;
+    margin-bottom: 35px;
+    color: #fff;
+    width: 100%;
+}
+.log_reg_form .checkbox
+{
+     background-color:rgba(30,155,215,0);
+     border:#fff;
+     border-radius: 20px;
+     float: right;
+}
+/* The container */
+.log_reg_form .container
+ {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float: right;
+}
+
+/* Hide the browser's default checkbox */
+.log_reg_form .container input 
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.log_reg_form .checkmark 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border:1px solid #fff;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.log_reg_form .checkmark:after 
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.log_reg_form .container input:checked ~ .checkmark:after 
+{
+    display: block;
+}
+/* Style the checkmark/indicator */
+.log_reg_form .container .checkmark:after 
+{
+    left: 5px;
+    top: 0px;
+    width: 4px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.register_button_inner
+{
+    width: 100%;
+    font-family: titilliumweb_regular;
+    background-color: #fff;
+    height: 30px;
+    font-size: 18px;
+    color: #1f99da;
+    border: 0;
+    margin-top:10%;
+}
+.continue_text a
+{
+     font-size: 18px;
+     font-family: titilliumweb_regular;
+     color: rgba(255,255,255,0.7);
+}
+ .bottom_text
+ {
+    position: absolute;
+    bottom: 4%;
+    width: 100%;
+    text-align: center;
+ }
+ .regpg_2
+ {
+    max-width:  70% !important;
+    margin-bottom: 10px !important;
+ }
+.reglab2
+{
+    width: 30%;
+}
