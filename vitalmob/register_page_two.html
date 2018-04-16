@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Collapsible sidebar using Bootstrap 3</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        
+    </head>
+    <body>
+        <div class="bgimage">
+            <div class="log_logo">
+                <img src="img/login_logo.png">
+            </div>
+        </div>
+        <form class="log_reg_form ">
+            <p>Contact Details</p>
+            <label class="reglab2" for="name">Name:</label><input type="text" class="regpg_2" id="usr">
+            <label class="reglab2"for="surname">Surname:</label><input type="text" class="regpg_2" id="usr">
+            <label class="reglab2"for="country">Country:</label><input type="text" class="regpg_2" id="usr">
+            <label class="reglab2"for="location">Location:</label><input type="text" class="regpg_2" id="usr">
+            <p>Calories Calculation Data</p>
+            <label class="reglab2" for="birth_date">Birth Date:</label><input type="text" class="regpg_2" id="usr" placeholder="dd/my/aa">
+            <label class="reglab2"for="gender">Gender:</label><input type="text" class="regpg_2" id="usr" placeholder="Male/Female">
+            <label class="reglab2"for="height">Height:</label><input type="text" class="regpg_2" id="usr" placeholder="Feet/Inches" >
+            <label class="reglab2"for="weight">Weight:</label><input type="text" class="regpg_2" id="usr" placeholder="pounds">
+            <button type="submit" class="register_button_inner text-center">DONE</button>
+
+        </form> <!--End log_reg_form -->
+       
+
+
+        
+
+
+
+        <div class="overlay"></div>
+
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').fadeOut();
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').fadeIn();
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+    </body>
+</html>
