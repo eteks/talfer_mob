@@ -20,29 +20,35 @@
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+
+                <ul class="list-unstyled components" id="navlist"> 
+                    <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">HELP</a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><a href="#">Home 1</a></li>
+                            <!-- <li><a href="#">Home 1</a></li>
                             <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
+                            <li><a href="#">Home 3</a></li> -->
                         </ul>
                     </li>
                     <li>
-                        <a href="#">About</a>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                        <a href="#">PROFILE</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">ACCOUNT</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Page 1</a></li>
+                           <!--  <li><a href="#">Page 1</a></li>
                             <li><a href="#">Page 2</a></li>
-                            <li><a href="#">Page 3</a></li>
+                            <li><a href="#">Page 3</a></li> -->
                         </ul>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a href="#languageSubmenu" data-toggle="collapse" aria-expanded="false">LANGUAGES</a>
+                          <ul class="collapse list-unstyled" id="languageSubmenu">
+                            <li><a href="#">ENGLISH</a></li>
+                            <li><a href="#">ESPANOL</a></li>
+                            <li><a href="#">CATALA</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">SIGN OUT</a>
                     </li>
                 </ul>
             </nav>
@@ -50,8 +56,13 @@
             <!-- Page Content Holder -->
             <div id="content">
 
+                
                 <nav class="navbar navbar-default">
                         <div class="navbar-header">
+                            <div class="header_logo">
+                                <img src="img/title_logo.png">  
+                            </div>
+
                             <a href="#" id="sidebarCollapse">
                               <span class="glyphicon glyphicon-align-justify"></span>
                             </a>
@@ -65,6 +76,17 @@
                             </ul>
                         </div>
                 </nav>
+                <ul class="menu_bar">
+                            <li class="menu_right_border top"><a href="#">Orial Gifra</a></li>
+                            <li><a href="#"><img src="img/user_icon.png"></a></li>
+                            <li class="top"><a href="#">4.367</a></li>
+                </ul>   
+                <div class="clear_both"></div>
+                <div class="notification_topic text-left"> 
+                    <p>NOTIFICATIONS</p>
+                </div>
+                <div class="">
+                </div>
 
                
             </div>
@@ -98,6 +120,11 @@
                     $('.overlay').fadeIn();
                     $('.collapse.in').toggleClass('in');
                     $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+                $('#navlist a').click(function(e) {
+                    e.preventDefault(); //prevent the link from being followed
+                    $('#navlist a').removeClass('selected');
+                    $(this).addClass('selected');
                 });
             });
         </script>
