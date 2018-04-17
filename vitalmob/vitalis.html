@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Collapsible sidebar using Bootstrap 3</title>
+        <title>VitalSfera</title>
 
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="css/style.css">
         <!-- Scrollbar Custom CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
         
     </head>
     <body>
@@ -23,13 +23,13 @@
 
                 <ul class="list-unstyled components" id="navMenus"> 
                     <li>
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><span class="menu_icon"><img width="15px" height="15px" src="img/help.png"></span>HELP</a>                       
+                        <a href="#homeSubmenu"><span class="menu_icon"><img width="15px" height="15px" src="img/help.png"></span>HELP</a>                       
                     </li>
                     <li>
                         <a href="#"><span class="menu_icon"><img width="15px" height="15px" src="img/profile.png"></span>PROFILE</a>
                     </li>
                     <li>
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><span class="menu_icon"><img width="15px" height="15px" src="img/account.png"></span>ACCOUNT</a>
+                        <a href="#pageSubmenu"><span class="menu_icon"><img width="15px" height="15px" src="img/account.png"></span>ACCOUNT</a>
                     </li>
                     <li>
                         <a href="#languageSubmenu" data-toggle="collapse" aria-expanded="false"><span class="menu_icon"><img width="15px" height="15px" src="img/language.png"></span>LANGUAGES</a>
@@ -43,9 +43,9 @@
                         <a href="#"><span class="menu_icon"><img width="15px" height="15px" src="img/signout.png"></span>SIGN OUT</a>
                     </li>
                 </ul>
-                <div class="sidebar_footer">
+                <footer class="sidebar_footer">
                     <img src="img/footer_logo.png" alt="footer_logo">
-                </div>
+                </footer>
             </nav>
 
             <!-- Page Content Holder -->
@@ -103,11 +103,11 @@
 
 
         <!-- jQuery CDN -->
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/jquery-1.12.0.min.js"></script>
         <!-- Bootstrap Js CDN -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <!-- jQuery Custom Scroller CDN -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 
         <script type="text/javascript">
             $(document).ready(function () {
@@ -131,11 +131,11 @@
                 // adding classname 'active' to current click li 
                 $(this).addClass("active");
                 });
-                $("#languageSubmenu").on('click', 'li', function () {
-                $("#languageSubmenu li.active").removeClass("active");
-                // adding classname 'active' to current click li 
-                $(this).addClass("active");
-                });
+                // $("#languageSubmenu").on('click', 'li', function () {
+                // $("#languageSubmenu li.active").removeClass("active");
+                // // adding classname 'active' to current click li 
+                // $(this).addClass("active");
+                // });
             });
         </script>
     </body>
