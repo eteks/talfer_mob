@@ -121,7 +121,7 @@ a,a:hover,a:active,a:focus
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 12px;
     display: block;
     background: linear-gradient(#525357, #424347);
 }
@@ -250,11 +250,11 @@ body
     width: 100%;
     text-align: center;
 }
-.reghome_form a, .bottom_text p a, .log_reg_form label
+.reghome_form a, .bottom_text p a, .log_reg_form label, .menu_bar li > a, .vitalis p, .back a, .top a
 {
     font-family: 'Titillium Web','SemiBold';
 }
-.forgot_pwd_text a, .log_reg_form .container
+.forgot_pwd_text a, .log_reg_form .container, .vitalis_desc
 {
     font-family: 'Titillium Web';
 }
@@ -465,7 +465,6 @@ form p
 {
   text-decoration: none;
   color:#656669;
-  font-family: titilliumweb_bold;
 }
 .menu_bar .top
 {
@@ -486,6 +485,10 @@ form p
 .clear_both
 {
 clear:both;
+}
+.vitalis_desc
+{
+    text-align: justify;
 }
 .vitalis_desc img
 {
