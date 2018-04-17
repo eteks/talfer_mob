@@ -20,6 +20,10 @@
     font-family: titilliumweb_light;
     src: url(../fonts/TitilliumWeb-Light.ttf);
 }
+@font-face{
+    font-family:'Glyphicons Halflings';
+    src:url(../fonts/glyphicons-halflings-regular.eot);
+}
 a,a:hover,a:active,a:focus
 {
     color:#fff;
@@ -469,9 +473,19 @@ form p
 }
 .sidebar_footer
 {
-    margin-top: 59%;
-    padding: 0 8%;
+    position: fixed;
+    bottom: 10px;
+    left: 13px;
 }
+.sidebar_footer
+{
+    display:none;
+}
+#sidebar.active .sidebar_footer
+{
+        display:block;
+}
+
 
 /* ---------------------------------------------------
  Content style
