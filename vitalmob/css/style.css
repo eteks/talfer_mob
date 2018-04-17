@@ -535,5 +535,103 @@ clear:both;
 {
     text-decoration: none;
     font-family: 'Titillium Web','Regular';
+    list-style: none;    
 
+}
+.notification_list li a
+{
+    color: #000;
+}
+.notification_list li a:hover
+{
+    color: #1999d2;
+}
+.notification_list li span img 
+{
+    margin-right: 6px;
+}
+.notification_list
+{
+    padding-left: 15px;
+}
+#wtf
+{
+    font-family: 'Titillium Web','SemiBold';
+}
+.dsel1
+{
+    font-family: 'Titillium Web','Regular';
+}
+.notification_topic p span
+{
+    margin-right: 7px;
+}
+/*Activity Tabs*/
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: none;
+    }
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 1px 7px;
+    background-color: #fff;
+    border:none;
+    color: #555;
+    border-radius: 0px;
+    margin:3px;
+    font-size: 12px;
+    font-family: 'Titillium Web','Regular';
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+
+    color: #fff;
+    cursor: default;
+    background-color: #1999d2;
+    border: 1px solid #fff;
+        border-bottom-color: rgb(221, 221, 221);
+    border-bottom-color: transparent;
+
+}
+.icon_back
+{
+    background-color: #1999d2;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-family: 'Titillium Web','SemiBold';
+}
+.icon_back > div
+{
+    display: inline-block;
+    border-right: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    min-height: 40px;
+    vertical-align: middle;
+    margin: 5px 0;
+}
+.icon_back img
+{
+    max-width:35px;
+}
+.icon_space_one
+{
+    width: 20%;
+}
+.icon_space_two
+{
+    padding-top: 10px;
+    width: 30%;
+}
+.icon_space_three
+{
+    border-right: 0 !important;
+    width: 45%;
+    text-align: right !important;
+    font-size: 23px;
+
+}
+.icon_space_three span
+{
+    font-size: 10px;
 }
